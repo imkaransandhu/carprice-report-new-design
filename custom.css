@@ -717,12 +717,12 @@ small {
   .text-muted.text-sm-end {
     float: right;
     position: relative;
-    top: -130px;
+    top: -130px !important;
   }
 
   .py-2.row {
     position: relative;
-    top: -150px;
+    top: -150px !important;
     padding: 0 !important;
   }
 
