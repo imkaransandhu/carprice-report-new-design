@@ -1,0 +1,769 @@
+:root {
+  /* Font-sizes */
+  --big-heading: 50px;
+  --main-heading: 22px;
+  --main-text: 18px;
+  --small-text: 15px;
+
+  /* Colors */
+  /* Color for custon button and hover over links */
+  --semi-dark-blue-color: #5e879d;
+  --whitesmoke-bg-color: #f4f8f9;
+}
+
+@font-face {
+  font-family: MavenProBold;
+  src: url("./assets/fonts/Maven\ Pro\ Bold.otf");
+}
+
+@font-face {
+  font-family: MavenProRegular;
+  src: url("./assets/fonts/Maven\ Pro\ Regular.otf");
+}
+
+@font-face {
+  font-family: SourceSansPro-Bold;
+  src: url("./assets/fonts/SourceSansPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: SourceSansPro-BoldItalic;
+  src: url("./assets/fonts/SourceSansPro-BoldItalic.ttf");
+}
+
+/* Similar CSS */
+/* Only font family */
+.card .card-body .invoice-title .text-muted p.mb-1 strong,
+.card .card-body .text-muted.text-sm-end h5.font-size-16.mb-1,
+#SvgjsText1010,
+thead {
+  font-family: "MavenProBold" !important;
+  color: var(--semi-dark-blue-color) !important;
+  font-weight: normal !important;
+  text-transform: uppercase;
+  font-size: var(--main-heading) !important;
+}
+
+.invoice-title,
+.card .card-body .py-2 {
+  width: calc(100% + 200px);
+  /* // twice the value of the parent's padding */
+  margin-left: -100px;
+  /* // -1 * parent's padding */
+}
+
+.invoice-title .mb-4 img,
+.invoice-title h4.float-end.font-size-16 {
+  position: absolute;
+  left: 100px;
+}
+
+tbody tr th:first-child {
+  text-transform: uppercase;
+}
+
+/* No padding for column */
+.container-fluid .col-lg-12 {
+  padding: 0;
+}
+
+/* Remove paddding for card bottom */
+.container-fluid .card {
+  margin-bottom: 0;
+}
+
+/* Assigning padding for card */
+.card .card-body {
+  padding: 0 100px;
+}
+
+.invoice-title {
+  /* content: url(./img/dollar-banner.png); */
+  position: relative;
+  height: 200px;
+}
+
+/* Removing the margin for the carprice image and its parent div */
+.invoice-title .mb-4 {
+  margin-bottom: 0px !important;
+}
+
+/* Changing the logo for carprice */
+.invoice-title .mb-4 img {
+  content: url("./assets/img/CarPrice\ Logo.png");
+  top: 12%;
+  width: 300px;
+}
+
+/* CSS for Market eValuation Report heading   */
+.invoice-title h4.float-end.font-size-16 {
+  bottom: 10%;
+  font-size: var(--big-heading) !important;
+  color: #000;
+  font-weight: 600;
+}
+
+/* Setting the page to be 100% of the viewpoint */
+.invoice-title .row {
+  width: 100%;
+}
+
+.invoice-title .text-muted {
+  position: absolute;
+  top: 200px;
+  left: 110px;
+  color: rgb(172, 172, 172);
+  text-transform: uppercase;
+}
+
+.invoice-title img.float-end {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  content: url(./assets/img/car-image.jpg);
+  width: 200px !important;
+}
+
+/* Horizontal line  */
+hr.my-4 {
+  margin-top: 130px !important;
+  color: var(--semi-dark-blue-color);
+}
+
+/* Estimated value CSS */
+h1 {
+  font-family: "SourceSansPro-Bold";
+  font-size: 30px;
+  color: #000;
+}
+
+h1 strong {
+  font-size: var(--big-heading);
+}
+
+p,
+small {
+  font-family: "MavenProRegular";
+  font-size: var(--main-text);
+  color: #000;
+  line-height: 1.2;
+}
+
+/* table css */
+/* Setting background color for full div  */
+.card .card-body .py-2 {
+  background-color: var(--whitesmoke-bg-color);
+  padding: 40px 80px !important;
+}
+
+.table-responsive .table-bordered {
+  border-color: var(--semi-dark-blue-color);
+  text-align: left;
+}
+
+.table-responsive .table-bordered th.text-end {
+  text-align: left !important;
+}
+
+.table-responsive tr th {
+  padding: 10px;
+}
+
+.py-2 strong {
+  font-family: "MavenProBold";
+  color: var(--semi-dark-blue-color);
+  text-transform: uppercase;
+  font-size: var(--main-heading);
+}
+
+.py-2 strong:last-child {
+  font-family: "MavenProRegular";
+  color: #000;
+  font-size: var(--main-text);
+}
+
+/* .py-2 br {
+  display: none;
+} */
+
+.py-2 .d-print-none.mt-4 p.font-size-6.mb-1 {
+  margin-bottom: 0px !important;
+}
+.py-2 .d-print-none.mt-4 p,
+.py-2 .d-print-none.mt-4 small {
+  font-size: var(--small-text);
+  line-height: 15px;
+}
+
+.py-2 .d-print-none.mt-4 small {
+  position: relative;
+}
+
+.vehicle-safety small,
+.fuel-economy small {
+  display: block;
+  margin-top: 10px;
+}
+
+.vehicle-safety small {
+  margin-top: 10px;
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+.fuel-economy {
+  margin-top: 20px;
+}
+
+.table-right br,
+.table-right img {
+  display: none;
+}
+
+.fuel-economy small strong {
+  display: block;
+}
+
+.table-right {
+  padding-left: 10px;
+  flex-direction: column-reverse;
+}
+
+.vehicle-safety strong {
+  float: left;
+  width: 55%;
+}
+
+.vehicle-safety i {
+  float: right;
+  font-size: 30px !important;
+}
+
+/* .vehicle-safety , .fuel-economy {
+  padding-left: 10px;
+}
+
+.vehicle-safety {
+  min-height: 70px;
+}
+
+.vehicle-safety strong {
+  position: absolute;
+  left: 0;
+  width: 50%;
+}
+
+.vehicle-safety i {
+  float: right;
+  width: 10%;
+}
+
+
+
+.vehicle-safety small {
+  position: absolute;
+  margin-top: 40px;
+  left: 0
+}
+
+
+
+
+.fuel-economy {
+  margin-top: 40px;
+  min-height: 70px;
+}
+
+.fuel-economy strong, .fuel-economy small {
+  position: absolute;
+  left:  0;
+}
+
+.fuel-economy small {
+  bottom: 10px;
+}  */
+
+/* Print Button CSS */
+.btn.btn-success.waves-effect.waves-light.me-1 {
+  font-weight: 700;
+  border-radius: 50px;
+  color: #fff;
+  background-color: var(--semi-dark-blue-color);
+  font-size: var(--main-text);
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: none;
+  font-family: "MavenProBold";
+}
+
+/* Hiding the print button icon */
+.btn.btn-success.waves-effect.waves-light.me-1 i {
+  display: none;
+}
+
+/* Medium Layout: 1200px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  :root {
+    /* Font-sizes */
+    --big-heading: 35px;
+    --main-heading: 22px;
+    --main-text: 17px;
+    --small-text: 14px;
+  }
+
+  /* Assigning padding for card */
+  .card .card-body {
+    padding: 0 80px;
+  }
+
+  .invoice-title,
+  .card .card-body .py-2 {
+    width: calc(100% + 160px);
+    /* // twice the value of the parent's padding */
+    margin-left: -80px;
+    /* // -1 * parent's padding */
+  }
+
+  .invoice-title .mb-4 img,
+  .invoice-title h4.float-end.font-size-16 {
+    position: absolute;
+    left: 80px;
+  }
+
+  .invoice-title {
+    height: 180px;
+  }
+
+  .invoice-title .text-muted {
+    top: 180px;
+    left: 90px;
+  }
+
+  .invoice-title img.float-end {
+    top: 180px;
+    right: 80px;
+  }
+
+  /* table css */
+  /* Setting background color for full div  */
+  .card .card-body .py-2 {
+    padding: 40px 80px !important;
+  }
+
+  /* Horizontal line  */
+  hr.my-4 {
+    margin-top: 125px !important;
+  }
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  :root {
+    /* Font-sizes */
+    --big-heading: 30px;
+    --main-heading: 18px;
+    --main-text: 15px;
+    --small-text: 13px;
+  }
+
+  /* Assigning padding for card */
+  .card .card-body {
+    padding: 0 50px;
+  }
+
+  .invoice-title,
+  .card .card-body .py-2 {
+    width: calc(100% + 100px);
+    /* // twice the value of the parent's padding */
+    margin-left: -50px;
+    /* // -1 * parent's padding */
+  }
+
+  .invoice-title .mb-4 img,
+  .invoice-title h4.float-end.font-size-16 {
+    position: absolute;
+    left: 50px;
+  }
+
+  .invoice-title .mb-4 img {
+    width: 250px;
+  }
+
+  .invoice-title {
+    height: 150px;
+  }
+
+  .invoice-title .text-muted {
+    top: 150px;
+    left: 60px;
+  }
+
+  .invoice-title img.float-end {
+    top: 150px;
+    right: 50px;
+    width: 150px !important;
+  }
+
+  /* table css */
+  /* Setting background color for full div  */
+  .row.col-12.col-md-4 {
+    padding-left: 20px;
+  }
+
+  .card .card-body .py-2 {
+    padding: 40px 50px !important;
+  }
+
+  /* Horizontal line  */
+  hr.my-4 {
+    margin-top: 100px !important;
+  }
+
+  .vehicle-safety i {
+    font-size: 23px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  :root {
+    /* Font-sizes */
+    --big-heading: 35px;
+    --main-heading: 18px;
+    --main-text: 14px;
+    --small-text: 12px;
+  }
+  .table-responsive {
+    float: none;
+    width: 100%;
+  }
+
+  .py-2 .row {
+    margin-top: 20px;
+  }
+
+  .card .card-body .py-2 {
+    padding: 40px 50px !important;
+  }
+
+  .fuel-economy {
+    margin-top: 0;
+  }
+
+  .fuel-economy strong,
+  .fuel-economy small {
+    left: 10px;
+  }
+
+  .table-right {
+    padding-left: 0px;
+    flex-direction: row-reverse;
+  }
+
+  .d-print-none.mt-4 {
+    margin-top: 0px !important;
+    text-align: center;
+  }
+
+  .d-print-none .float-end {
+    float: none !important;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .vehicle-safety strong {
+    width: 56%;
+  }
+
+  .vehicle-safety i {
+    font-size: 20px !important;
+  }
+
+  .invoice-title img.float-end {
+    top: 210px;
+    right: 50px;
+    width: 150px !important;
+  }
+
+  hr.my-4 {
+    margin-top: 100px !important;
+  }
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* Assigning padding for card */
+  .card .card-body {
+    padding: 0 50px;
+  }
+
+  .invoice-title,
+  .card .card-body .py-2 {
+    width: calc(100% + 100px);
+    /* // twice the value of the parent's padding */
+    margin-left: -50px;
+    /* // -1 * parent's padding */
+  }
+
+  .invoice-title .mb-4 img,
+  .invoice-title h4.float-end.font-size-16 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .invoice-title .mb-4 img {
+    width: 250px;
+  }
+
+  .invoice-title {
+    height: 150px;
+  }
+
+  .invoice-title .text-muted {
+    top: 150px;
+    left: 60px;
+  }
+
+  .invoice-title img.float-end {
+    top: 150px;
+    right: 50px;
+  }
+
+  /* table css */
+
+  /* Horizontal line  */
+}
+
+@media only screen and (max-width: 576px) {
+  :root {
+    /* Font-sizes */
+    --big-heading: 30px;
+  }
+
+  .row {
+    text-align: center;
+  }
+
+  .invoice-title .text-muted {
+    top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50px !important;
+    right: 50px !important;
+    text-align: center;
+  }
+
+  .fuel-economy {
+    margin-top: 10px;
+  }
+
+  .table-right {
+    flex-direction: column-reverse;
+  }
+
+  .invoice-title img.float-end {
+    top: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50px !important;
+    right: 50px !important;
+    text-align: center;
+  }
+
+  hr.my-4 {
+    margin-top: 180px !important;
+  }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 479px) {
+  :root {
+    /* Font-sizes */
+    --big-heading: 23px;
+  }
+
+  /* Assigning padding for card */
+  .card .card-body {
+    padding: 0 20px;
+  }
+
+  .invoice-title,
+  .card .card-body .py-2 {
+    width: calc(100% + 40px);
+    /* // twice the value of the parent's padding */
+    margin-left: -20px;
+    /* // -1 * parent's padding */
+  }
+
+  .invoice-title .mb-4 img,
+  .invoice-title h4.float-end.font-size-16 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .invoice-title .text-muted {
+    top: 150px;
+  }
+
+  .invoice-title h4.float-end.font-size-16 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .invoice-title .mb-4 img {
+    width: 250px;
+  }
+
+  .invoice-title {
+    height: 150px;
+    background-position: center center;
+  }
+
+  /* table css */
+  /* Setting background color for full div  */
+  .card .card-body .py-2 {
+    padding: 40px 20px !important;
+  }
+
+  /* Horizontal line  */
+  hr.my-4 {
+    margin-top: 100px !important;
+  }
+
+  .invoice-title img.float-end {
+    top: 220px;
+  }
+
+  hr.my-4 {
+    margin-top: 200px !important;
+  }
+}
+
+@media print {
+  :root {
+    /* Font-sizes */
+    --big-heading: 30px;
+    --main-heading: 20px;
+    --main-text: 15px;
+    --small-text: 12px;
+
+    /* Colors */
+    /* Color for custon button and hover over links */
+    --semi-dark-blue-color: #5e879d;
+    --whitesmoke-bg-color: #f4f8f9;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+ 
+
+  .invoice-title img.float-end {
+    top: 90px;
+  }
+
+  .invoice-title .mb-4 img {
+    width: 200px;
+  }
+
+  .invoice-title h4.float-end.font-size-16 {
+    bottom: 0;
+  }
+
+  .invoice-title {
+    height: 120px;
+  }
+
+  .invoice-title .text-muted {
+    top: 120px;
+  }
+
+  hr.my-4 {
+    margin-top: 120px !important;
+  }
+
+  .footer,
+  .navbar-header,
+  .page-title-box,
+  .right-bar,
+  .vertical-menu {
+    display: none !important;
+  }
+
+  .card-body,
+  .main-content,
+  .page-content,
+  .right-bar {
+    padding: 0 10px !important;
+    margin: 0 !important;
+  }
+
+ .card-body {
+   height: 0;
+ }
+
+
+  .text-muted.text-sm-end {
+    float: right;
+    position: relative;
+    top: -130px;
+  }
+
+  .py-2.row {
+    position: relative;
+    top: -150px;
+    padding: 0 !important;
+  }
+
+  .card {
+    border: 0;
+  }
+
+  .table-responsive {
+    padding: 0 30px !important;
+  }
+
+  .table-responsive tr:last-child {
+    margin-top: 0;
+  }
+  /* .invoice-title .mb-4 img {
+    right: 50px;
+  }
+
+  .invoice-title h4.float-end.font-size-16 {
+    font-size: 60px !important;
+    right: 50px;
+
+    text-align: right;
+  } */
+
+  .table-right {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 0 30px;
+    margin-top: 10px;
+  }
+
+  .vehicle-safety {
+    display: inline-block;
+    width: 60%;
+  }
+
+  .fuel-economy {
+    display: inline-block;
+    width: 40%;
+    position: absolute;
+    right: 0;
+  }
+}
