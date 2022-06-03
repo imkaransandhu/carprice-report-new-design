@@ -97,7 +97,7 @@ tbody tr th:first-child {
 
 /* CSS for Market eValuation Report heading   */
 .invoice-title h4.float-end.font-size-16 {
-  bottom: 10%;
+  bottom: 0;
   font-size: var(--big-heading) !important;
   color: #000;
   font-weight: 600;
@@ -489,6 +489,10 @@ small {
   hr.my-4 {
     margin-top: 100px !important;
   }
+
+  .invoice-title h4.float-end.font-size-16 {
+    bottom: 3%;
+  }
 }
 
 /* Wide Mobile Layout: 480px. */
@@ -578,6 +582,8 @@ small {
   hr.my-4 {
     margin-top: 180px !important;
   }
+
+ 
 }
 
 /* Mobile Layout: 320px. */
