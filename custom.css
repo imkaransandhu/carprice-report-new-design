@@ -243,43 +243,31 @@ small {
 /* .vehicle-safety , .fuel-economy {
   padding-left: 10px;
 }
-
 .vehicle-safety {
   min-height: 70px;
 }
-
 .vehicle-safety strong {
   position: absolute;
   left: 0;
   width: 50%;
 }
-
 .vehicle-safety i {
   float: right;
   width: 10%;
 }
-
-
-
 .vehicle-safety small {
   position: absolute;
   margin-top: 40px;
   left: 0
 }
-
-
-
-
 .fuel-economy {
   margin-top: 40px;
   min-height: 70px;
 }
-
 .fuel-economy strong, .fuel-economy small {
   position: absolute;
   left:  0;
 }
-
 .fuel-economy small {
   bottom: 10px;
 }  */
@@ -582,8 +570,6 @@ small {
   hr.my-4 {
     margin-top: 180px !important;
   }
-
- 
 }
 
 /* Mobile Layout: 320px. */
@@ -658,8 +644,8 @@ small {
   :root {
     /* Font-sizes */
     --big-heading: 30px;
-    --main-heading: 20px;
-    --main-text: 15px;
+    --main-heading: 25px;
+    --main-text: 20px;
     --small-text: 12px;
 
     /* Colors */
@@ -672,8 +658,6 @@ small {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
-
- 
 
   .invoice-title img.float-end {
     top: 90px;
@@ -715,21 +699,23 @@ small {
     margin: 0 !important;
   }
 
- .card-body {
-   height: 0;
- }
+  .card-body {
+    height: 0;
+  }
 
+  .row .col-sm-8:last-child {
+    position: absolute;
+    left: 0;
+  }
 
-  .text-muted.text-sm-end {
-    float: right;
-    position: relative;
-    top: -130px !important;
+  .row .col-sm-4:last-child {
+    position: absolute;
+    left: 70%;
   }
 
   .py-2.row {
     position: relative;
-    top: -150px !important;
-    padding: 0 !important;
+    margin-top: 350px;
   }
 
   .card {
@@ -740,17 +726,12 @@ small {
     padding: 0 30px !important;
   }
 
-  .table-responsive tr:last-child {
-    margin-top: 0;
-  }
   /* .invoice-title .mb-4 img {
     right: 50px;
   }
-
   .invoice-title h4.float-end.font-size-16 {
     font-size: 60px !important;
     right: 50px;
-
     text-align: right;
   } */
 
