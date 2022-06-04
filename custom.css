@@ -747,13 +747,18 @@ small {
 
   .vehicle-safety {
     display: inline-block;
-    width: 60%;
+    width: 50%;
+  }
+
+  .vehicle-safety strong {
+    display: inline-block;
   }
 
   .fuel-economy {
     display: inline-block;
-    width: 40%;
+    width: 50%;
     position: absolute;
     right: 0;
+    top: -15px;
   }
 }
