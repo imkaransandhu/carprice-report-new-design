@@ -718,6 +718,9 @@ small {
     margin-top: 350px;
   }
 
+  .invoice-title img.float-end {
+    right: auto;
+  }
   .card {
     border: 0;
   }
